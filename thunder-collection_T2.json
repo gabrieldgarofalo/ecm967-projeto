@@ -1,0 +1,100 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "T2",
+    "dateExported": "2023-11-29T02:11:43.642Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "4fa02e1b-83de-43ea-92f8-eb0f16610afe",
+            "colId": "5707449b-38a3-4e7c-87e5-26716562f4cb",
+            "containerId": "",
+            "name": "https://iefvk2kwe8.execute-api.us-east-1.amazonaws.com/dev/feedback",
+            "url": "https://iefvk2kwe8.execute-api.us-east-1.amazonaws.com/dev/feedback",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-11-29T02:09:04.426Z",
+            "modified": "2023-11-29T02:09:04.426Z",
+            "headers": [
+                {
+                    "name": "x-api-key",
+                    "value": "uG4hIQXjcG1LfgzVO1J8z7A7G9hcWZxv8z8UBsyI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"informacoes\": \"laranja\",\n  \"comentario\": \"ruim\",\n  \"classificacao\": \"1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6a99a44f-d737-426a-ae66-77e30eccdf49",
+            "colId": "5707449b-38a3-4e7c-87e5-26716562f4cb",
+            "containerId": "",
+            "name": "POST2",
+            "url": "https://iefvk2kwe8.execute-api.us-east-1.amazonaws.com/dev/feedback",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-29T02:09:26.929Z",
+            "modified": "2023-11-29T02:11:23.126Z",
+            "headers": [
+                {
+                    "name": "x-api-key",
+                    "value": "uG4hIQXjcG1LfgzVO1J8z7A7G9hcWZxv8z8UBsyI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"informacoes\": \"verde\",\n  \"comentario\": \"médio\",\n  \"classificacao\": \"5\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "714ec1f0-a1c8-44ab-a268-9c72ef7b5017",
+            "colId": "5707449b-38a3-4e7c-87e5-26716562f4cb",
+            "containerId": "",
+            "name": "POST3",
+            "url": "https://iefvk2kwe8.execute-api.us-east-1.amazonaws.com/dev/feedback",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-11-29T02:09:38.622Z",
+            "modified": "2023-11-29T02:11:26.664Z",
+            "headers": [
+                {
+                    "name": "x-api-key",
+                    "value": "uG4hIQXjcG1LfgzVO1J8z7A7G9hcWZxv8z8UBsyI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"informacoes\": \"azul\",\n  \"comentario\": \"bom\",\n  \"classificacao\": \"2\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6e5f700e-335c-464d-9ef6-089a5b6324dc",
+            "colId": "5707449b-38a3-4e7c-87e5-26716562f4cb",
+            "containerId": "",
+            "name": "GET ALL",
+            "url": "https://iefvk2kwe8.execute-api.us-east-1.amazonaws.com/dev/feedback",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-11-29T02:09:48.351Z",
+            "modified": "2023-11-29T02:11:30.858Z",
+            "headers": [
+                {
+                    "name": "x-api-key",
+                    "value": "uG4hIQXjcG1LfgzVO1J8z7A7G9hcWZxv8z8UBsyI"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

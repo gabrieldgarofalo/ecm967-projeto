@@ -1,0 +1,76 @@
+---
+swagger: "2.0"
+info:
+  version: "2023-11-20T00:16:04Z"
+  title: "feedback-api"
+host: "iefvk2kwe8.execute-api.us-east-1.amazonaws.com"
+basePath: "/dev"
+schemes:
+- "https"
+paths:
+  /feedback:
+    get:
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+    post:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "FeedbackModel"
+        required: true
+        schema:
+          $ref: "#/definitions/FeedbackModel"
+      responses:
+        "200":
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+            Access-Control-Allow-Methods:
+              type: "string"
+            Access-Control-Allow-Headers:
+              type: "string"
+definitions:
+  Empty:
+    type: "object"
+    title: "Empty Schema"
+  FeedbackModel:
+    type: "object"
+    required:
+    - "classificacao"
+    - "comentario"
+    - "informacoes"
+    properties:
+      informacoes:
+        type: "string"
+      comentario:
+        type: "string"
+      classificacao:
+        type: "string"
+    title: "FeedbackModel"

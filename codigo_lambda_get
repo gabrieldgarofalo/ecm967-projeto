@@ -1,0 +1,13 @@
+import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
+import { DynamoDBDocumentClient, ScanCommand } from
+"@aws-sdk/lib-dynamodb";
+const client = new DynamoDBClient({});
+const docClient = DynamoDBDocumentClient.from(client);
+export const handler = async (event, context) => {
+const id = context.awsRequestId;
+const command = new ScanCommand({
+TableName: "Feedback"
+});
+const response = await docClient.send(command);
+return response.Items;
+};
